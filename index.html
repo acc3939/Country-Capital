@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Country</title>
+</head>
+<body>
+  <div class="cotainer">
+    <h1>What's this country's capital?</h1>
+    
+    <br>
+    <form onsubmit='return false' id='form' aciton="/" method='GET'>
+      <div class="form-style">
+        <label for="country">:</label>
+        <input id="country" type="text" placeholder="Enter a country" required>
+      </div>
+      <div class="submit-style">
+        <input type="submit" onclick ="inputChanged()"/>
+      
+      </div>
+    </form>
+  
+    <script src="main.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class='hide' id="hide" style="display:none" >
+      <p> {capital}</p>
+    </div>
+  </div>
+</body>
+</html>
